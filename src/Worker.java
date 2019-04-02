@@ -11,7 +11,7 @@ public class Worker {
 	private double salary;
 
 	public Worker(){
-		
+
 	}
 	public Worker(String dni, String name, String surname, Sex sex, int age, double salary){
 		this.dni = dni;
@@ -52,5 +52,10 @@ public class Worker {
 	public void setSalary(double salary){
 		this.salary=salary;
 	}
-
+	public Sex getSex(){
+		return sex;
+	}
+	public void setSex(Sex sex){
+		this.sex=sex;
+	}
 }
