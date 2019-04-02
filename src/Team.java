@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Team{
 	
-	private University college;
 	private List<Worker> workers;
+	private University college;	
 
 	public Team(){
 		workers = new ArrayList<Worker>();

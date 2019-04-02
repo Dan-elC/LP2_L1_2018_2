@@ -1,0 +1,56 @@
+import java.util.*;
+
+public class Worker {
+	
+	private static int code;
+	private String dni;
+	private String name;
+	private String surname;
+	private Sex sex;
+	private int age;
+	private double salary;
+
+	public Worker(){
+		
+	}
+	public Worker(String dni, String name, String surname, Sex sex, int age, double salary){
+		this.dni = dni;
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+		this.salary = salary;
+		code++;
+	}
+
+	public String getDni(){
+		return dni;
+	}
+	public void setDni(String dni){
+		this.dni=dni;
+	}
+	public String getName(){
+		return name;
+	}
+	public void setName(String name){
+		this.name=name;
+	}
+	public String getSurname(){
+		return surname;
+	}
+	public void setSurname(String surname){
+		this.surname=surname;
+	}
+	public int getAge(){
+		return age;
+	}
+	public void setAge(int age){
+		this.age=age;
+	}
+	public double getSalary(){
+		return salary;
+	}
+	public void setSalary(double salary){
+		this.salary=salary;
+	}
+
+}
