@@ -1,4 +1,4 @@
-public class Saleman{
+public class Saleman extends Worker{
 
 	public Saleman(){
 

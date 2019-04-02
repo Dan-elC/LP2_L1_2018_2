@@ -1,4 +1,4 @@
-public class Leaderman{
+public class Leaderman extends Worker{
 	
 	private Category category;
 
@@ -9,6 +9,7 @@ public class Leaderman{
 		super( dni,  name,  surname,  sex,  age,  salary);
 		this.category=category;
 	}
+	
 	public Category getCategory(){
 		return category;
 	}

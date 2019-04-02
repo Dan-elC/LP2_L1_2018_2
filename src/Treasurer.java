@@ -1,4 +1,4 @@
-public class Treasurer{
+public class Treasurer extends Worker{
 	
 	private int tuitionNumber;
 
@@ -9,6 +9,7 @@ public class Treasurer{
 		super( dni,  name,  surname,  sex,  age,  salary);
 		this.tuitionNumber=tuitionNumber;
 	}
+	
 	public int getTuitionNumber(){
 		return tuitionNumber;
 	}
