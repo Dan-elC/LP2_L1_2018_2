@@ -9,7 +9,7 @@ public class Treasurer extends Worker{
 		super( dni,  name,  surname,  sex,  age,  salary);
 		this.tuitionNumber=tuitionNumber;
 	}
-	
+
 	public int getTuitionNumber(){
 		return tuitionNumber;
 	}

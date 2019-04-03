@@ -1,4 +1,4 @@
-public class Leaderman extends Worker{
+public class Leaderman extends Worker, interface Consultable{
 	
 	private Category category;
 
@@ -9,11 +9,15 @@ public class Leaderman extends Worker{
 		super( dni,  name,  surname,  sex,  age,  salary);
 		this.category=category;
 	}
-	
+
 	public Category getCategory(){
 		return category;
 	}
 	public void setCategory(Category category){
 		this.category=category;
+	}
+
+	public String consulData(){
+		
 	}
 }
