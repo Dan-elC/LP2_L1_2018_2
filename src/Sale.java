@@ -5,7 +5,7 @@ public class Sale{
 	private Customer customer;
 	private Saleman saleman;
 	private Date date;
-	private Double total;
+	private double total;
 	private List<SaleDetail> saledetails;
 
 	public Sale(){
@@ -15,6 +15,7 @@ public class Sale{
 		this.customer=customer;
 		this.saleman=saleman;
 		this.date=date;
+		saledetails = new ArrayList<SaleDetail>();
 	}
 
 	public Customer getCustomer(){
@@ -26,6 +27,9 @@ public class Sale{
 	public Saleman getSaleman(){
 		return saleman;
 	}
+	public List<SaleDetail> getSaleDetails(){
+		return saledetails;
+	}
 	public void setSaleman(Saleman saleman){
 		this.saleman=saleman;
 	}
@@ -35,15 +39,15 @@ public class Sale{
 	public void setDate(Date date){
 		this.date=date;
 	}
-	public Double getTotal(){
+	public double getTotal(){
 		return total;
 	}
-	public void setTotal(Double total){
+	public void setTotal(double total){
 		this.total=total;
 	}
 
-	public void addSaleDetail(SaleDetail saledetail){
-		saledetails.add(saledetail);
-		setTotal(getTotal() + saledetail.getSubTotal());
+	public void addSaleDetail(SaleDetail saledetail1){
+		saledetails.add(saledetail1);
+		setTotal(getTotal() + saledetail1.getSubTotal());
 	}
 }
