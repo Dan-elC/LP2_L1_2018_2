@@ -37,7 +37,5 @@ public class Principal{
 		String report = tm1.consultWorkersTeam();
 		System.out.println(report);
 
-
-
 	}
 }
