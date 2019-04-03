@@ -27,7 +27,6 @@ public class Team{
 
 	public consultWorkersTeam(){
 		String chain = "";
-
 		for(Worker work : getWorkers()){
 			chain = chain  + "\n" + worker.consultData();
 		}
