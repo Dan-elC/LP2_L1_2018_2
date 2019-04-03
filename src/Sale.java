@@ -9,7 +9,7 @@ public class Sale{
 	private List<SaleDetail> saledetails;
 
 	public Sale(){
-		saledetail = new ArrayList<SaleDetail>();
+		saledetails = new ArrayList<SaleDetail>();
 	}
 	public Sale(Customer customer, Saleman saleman, Date date){
 		this.customer=customer;

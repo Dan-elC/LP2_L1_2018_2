@@ -1,4 +1,4 @@
-public class Leaderman extends Worker, interface Consultable{
+public class Leaderman extends Worker implements Consultable{
 	
 	private Category category;
 
@@ -17,7 +17,7 @@ public class Leaderman extends Worker, interface Consultable{
 		this.category=category;
 	}
 
-	public String consulData(){
-		
+	public String consultData(){
+		return getCode() + " " + getName() + " " + getSurname() + getCategory();
 	}
 }

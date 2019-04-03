@@ -13,7 +13,10 @@ public class Worker extends Person{
 		this.salary = salary;
 		code++;
 	}
-	
+
+	public int getCode(){
+		return code;
+	}
 	public double getSalary(){
 		return salary;
 	}

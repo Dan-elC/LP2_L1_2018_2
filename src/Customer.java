@@ -1,4 +1,4 @@
-public class Customer{
+public class Customer extends Person{
 	
 	private String cellphone;
 	private String email;

@@ -1,4 +1,4 @@
-public class Saleman extends Worker, interface Consultable{
+public class Saleman extends Worker implements Consultable{
 
 	public Saleman(){
 
@@ -7,7 +7,7 @@ public class Saleman extends Worker, interface Consultable{
 		super( dni,  name,  surname,  sex,  age,  salary);
 	}
 
-	public String consulData(){
-		
+	public String consultData(){
+		return getDni() + " " + getName() + " " + getSurname() + getSex();
 	}
 }

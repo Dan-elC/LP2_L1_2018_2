@@ -22,7 +22,7 @@ public class University{
 	public String getAcronym(){
 		return acronym;
 	}
-	public void setAcronym(Strign acronym){
+	public void setAcronym(String acronym){
 		this.acronym=acronym;
 	}
 	public String getAddress(){

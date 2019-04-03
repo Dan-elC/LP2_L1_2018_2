@@ -1,3 +1,3 @@
-public enum{
+public enum Category{
 	J,C,S
 }
