@@ -20,4 +20,17 @@ public class Team{
 	public void setWorkers(List<Worker> workers){
 		this.workers = workers;
 	}
+
+	public void addWorker(Worker worker){
+		workers.add(worker);
+	}
+
+	public consultWorkersTeam(){
+		String chain = "";
+
+		for(Worker work : getWorkers()){
+			chain = chain  + "\n" + worker.consultData();
+		}
+		return chain;
+	}
 }
