@@ -25,10 +25,14 @@ public class Team{
 		workers.add(worker);
 	}
 
-	public void consultWorkersTeam(){
+	public String consultWorkersTeam(){
 		String chain = "";
+
 		for(Worker work : getWorkers()){
-			chain = chain  + "\n" + worker.consultData();
+			//chain = work.getName();
+			if(!(work instanceof Treasurer)){
+				chain = chain  + "\n" + work.consultData();
+			}			
 		}
 		return chain;
 	}

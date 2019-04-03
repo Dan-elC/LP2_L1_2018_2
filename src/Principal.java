@@ -26,7 +26,7 @@ public class Principal{
 
 		University uni1 = new University("Universidad Peruana","UPC","Narnia 3/4");
 
-		Team tm1 = Team();
+		Team tm1 = new Team();
 		tm1.setUniversity(uni1);
 		tm1.addWorker(sm1);
 		tm1.addWorker(lm1);
