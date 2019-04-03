@@ -8,6 +8,6 @@ public class Saleman extends Worker implements Consultable{
 	}
 
 	public String consultData(){
-		return getDni() + " " + getName() + " " + getSurname() + getSex();
+		return getDni() + " " + getName() + " " + getSurname() + " " + getSex();
 	}
 }

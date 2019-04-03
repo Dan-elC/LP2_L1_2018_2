@@ -29,10 +29,12 @@ public class Team{
 		String chain = "";
 
 		for(Worker work : getWorkers()){
-			chain = work.getName();
-			if(!(work instanceof Treasurer)){
-				chain = chain  + "\n" + work.consultData();
-			}			
+			if(work instanceof Saleman){
+				chain += "\n" + ((Saleman)work).consultData();
+			}
+			if(work instanceof Leaderman){
+				chain += "\n" +((Leaderman)work).consultData();
+			}
 		}
 		return chain;		
 	}

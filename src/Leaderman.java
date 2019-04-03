@@ -18,6 +18,6 @@ public class Leaderman extends Worker implements Consultable{
 	}
 
 	public String consultData(){
-		return getCode() + " " + getName() + " " + getSurname() + getCategory();
+		return getCode() + " " + getName() + " " + getSurname() + " " + getCategory();
 	}
 }

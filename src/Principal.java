@@ -15,14 +15,14 @@ public class Principal{
 		Sex sex = Sex.M;
 		Category cat = Category.J;
 
-		Saleman sm1 = new Saleman("12345","Jojo","Mojo",sex,22,930.23);
 		Customer custom = new Customer("12345673","Mojo","Jojo",sex,22,"123456789","gg@pucp.pe");
+		Saleman sm1 = new Saleman("12345","Jojo","Mojo",sex,22,930.23);
 		Leaderman lm1 = new Leaderman("53242","Sang","Pow",sex,18,450.23,cat);
 		Treasurer tr1 = new Treasurer("45622","Silvi","Balbal",sex,20,123.23,909090);
 
 		Sale venta = new Sale(custom,sm1,date);
 
-		venta.getSaleDetails().add(sd1);
+		venta.addSaleDetail(sd1);
 		venta.addSaleDetail(sd2);
 
 
@@ -30,9 +30,12 @@ public class Principal{
 
 		Team tm1 = new Team();
 		tm1.setUniversity(uni1);
+		
 		tm1.addWorker(sm1);
 		tm1.addWorker(lm1);
 		tm1.addWorker(tr1);
+		
+		
 
 		String report = tm1.consultWorkersTeam();
 		System.out.println(report);
